@@ -13,6 +13,7 @@
  */
 
 #import <XCTest/XCTest.h>
+#import "QLModel.h"
 
 @interface QLTestBasicTests : XCTestCase
 
@@ -30,9 +31,25 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testFuncModel_randomLessThanTen {
+    QLModel *model = [[QLModel alloc] init];
+    NSInteger num = [model randomLessThanTen];
+    // 表示如果expression满足，则测试通过，否则对应format的错误
+    XCTAssert(num < 10, @"num should less than 10");
+    
+    /*!
+     XCTFail(format...) // 直接Fail的断言
+     
+     // 其他一些常用的断言
+     XCTAssertTrue(expression, format...)
+     XCTAssertFalse(expression, format...)
+     XCTAssertEqual(expression1, expression2, format...)
+     XCTAssertNotEqual(expression1, expression2, format...)
+     XCTAssertEqualWithAccuracy(expression1, expression2, accuracy, format...)
+     XCTAssertNotEqualWithAccuracy(expression1, expression2, accuracy, format...)
+     XCTAssertNil(expression, format...)
+     XCTAssertNotNil(expression, format...)
+     */
 }
 
 - (void)testPerformanceExample {

@@ -14,6 +14,7 @@
 		14E2D95D1CA118CA00D7D019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E2D95C1CA118CA00D7D019 /* Assets.xcassets */; };
 		14E2D9601CA118CA00D7D019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2D95E1CA118CA00D7D019 /* LaunchScreen.storyboard */; };
 		14E2D96B1CA118CA00D7D019 /* QLTestBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2D96A1CA118CA00D7D019 /* QLTestBasicTests.m */; };
+		14E2D9771CA11C4300D7D019 /* QLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2D9761CA11C4300D7D019 /* QLModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		14E2D9661CA118CA00D7D019 /* QLTestBasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLTestBasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E2D96A1CA118CA00D7D019 /* QLTestBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLTestBasicTests.m; sourceTree = "<group>"; };
 		14E2D96C1CA118CA00D7D019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E2D9751CA11C4300D7D019 /* QLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLModel.h; sourceTree = "<group>"; };
+		14E2D9761CA11C4300D7D019 /* QLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				14E2D9541CA118CA00D7D019 /* AppDelegate.m */,
 				14E2D9561CA118CA00D7D019 /* ViewController.h */,
 				14E2D9571CA118CA00D7D019 /* ViewController.m */,
+				14E2D9751CA11C4300D7D019 /* QLModel.h */,
+				14E2D9761CA11C4300D7D019 /* QLModel.m */,
 				14E2D9501CA118CA00D7D019 /* Supporting Files */,
 			);
 			path = QLTestBasic;
@@ -213,6 +218,7 @@
 			files = (
 				14E2D9581CA118CA00D7D019 /* ViewController.m in Sources */,
 				14E2D9551CA118CA00D7D019 /* AppDelegate.m in Sources */,
+				14E2D9771CA11C4300D7D019 /* QLModel.m in Sources */,
 				14E2D9521CA118CA00D7D019 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +408,7 @@
 				14E2D9711CA118CA00D7D019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E2D9721CA118CA00D7D019 /* Build configuration list for PBXNativeTarget "QLTestBasicTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +417,7 @@
 				14E2D9741CA118CA00D7D019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
