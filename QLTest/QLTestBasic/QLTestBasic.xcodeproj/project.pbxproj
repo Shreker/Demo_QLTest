@@ -14,6 +14,8 @@
 		14E2D95D1CA118CA00D7D019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E2D95C1CA118CA00D7D019 /* Assets.xcassets */; };
 		14E2D9601CA118CA00D7D019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2D95E1CA118CA00D7D019 /* LaunchScreen.storyboard */; };
 		14E2D96B1CA118CA00D7D019 /* QLTestBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2D96A1CA118CA00D7D019 /* QLTestBasicTests.m */; };
+		14E2D97A1CA11F9600D7D019 /* UIImage+QLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2D9791CA11F9600D7D019 /* UIImage+QLImage.m */; };
+		14E2D97C1CA1234200D7D019 /* [shengri].png in Resources */ = {isa = PBXBuildFile; fileRef = 14E2D97B1CA1234200D7D019 /* [shengri].png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		14E2D9661CA118CA00D7D019 /* QLTestBasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLTestBasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E2D96A1CA118CA00D7D019 /* QLTestBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLTestBasicTests.m; sourceTree = "<group>"; };
 		14E2D96C1CA118CA00D7D019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E2D9781CA11F9600D7D019 /* UIImage+QLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QLImage.h"; sourceTree = "<group>"; };
+		14E2D9791CA11F9600D7D019 /* UIImage+QLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QLImage.m"; sourceTree = "<group>"; };
+		14E2D97B1CA1234200D7D019 /* [shengri].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[shengri].png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				14E2D9541CA118CA00D7D019 /* AppDelegate.m */,
 				14E2D9561CA118CA00D7D019 /* ViewController.h */,
 				14E2D9571CA118CA00D7D019 /* ViewController.m */,
+				14E2D9781CA11F9600D7D019 /* UIImage+QLImage.h */,
+				14E2D9791CA11F9600D7D019 /* UIImage+QLImage.m */,
 				14E2D9501CA118CA00D7D019 /* Supporting Files */,
 			);
 			path = QLTestBasic;
@@ -93,6 +100,7 @@
 		14E2D9501CA118CA00D7D019 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14E2D97B1CA1234200D7D019 /* [shengri].png */,
 				14E2D9591CA118CA00D7D019 /* Main.storyboard */,
 				14E2D95C1CA118CA00D7D019 /* Assets.xcassets */,
 				14E2D95E1CA118CA00D7D019 /* LaunchScreen.storyboard */,
@@ -191,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E2D97C1CA1234200D7D019 /* [shengri].png in Resources */,
 				14E2D9601CA118CA00D7D019 /* LaunchScreen.storyboard in Resources */,
 				14E2D95D1CA118CA00D7D019 /* Assets.xcassets in Resources */,
 				14E2D95B1CA118CA00D7D019 /* Main.storyboard in Resources */,
@@ -211,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E2D97A1CA11F9600D7D019 /* UIImage+QLImage.m in Sources */,
 				14E2D9581CA118CA00D7D019 /* ViewController.m in Sources */,
 				14E2D9551CA118CA00D7D019 /* AppDelegate.m in Sources */,
 				14E2D9521CA118CA00D7D019 /* main.m in Sources */,
@@ -402,6 +412,7 @@
 				14E2D9711CA118CA00D7D019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E2D9721CA118CA00D7D019 /* Build configuration list for PBXNativeTarget "QLTestBasicTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +421,7 @@
 				14E2D9741CA118CA00D7D019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

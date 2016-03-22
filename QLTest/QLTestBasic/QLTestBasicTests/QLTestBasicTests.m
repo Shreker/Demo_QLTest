@@ -6,7 +6,12 @@
 //  Copyright © 2016年 Shreker. All rights reserved.
 //
 
+/*! 性能测试
+ *  所谓性能测试，主要就是评估一段代码的运行时间，XCTest的性能的测试利用如下格式
+ */
+
 #import <XCTest/XCTest.h>
+#import "UIImage+QLImage.h"
 
 @interface QLTestBasicTests : XCTestCase
 
@@ -29,10 +34,14 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
+- (void)testPerformanceExample_scaledToSize {
+    UIImage *image = [UIImage imageNamed:@"[shengri]"];
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+        UIImage *resizedImage = [UIImage imageWithImage:image scaledToSize:CGSizeMake(100, 100)];
+        XCTAssertNotNil(resizedImage,@"resized image should not be nil");
+        CGFloat resizedWidth = resizedImage.size.width;
+        CGFloat resizedHeight = resizedImage.size.height;
+        XCTAssert(resizedHeight == 100 && resizedWidth == 100,@"Size is not right");
     }];
 }
 
